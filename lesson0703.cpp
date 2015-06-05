@@ -17,13 +17,13 @@ int main()
 	while(!numChar.eof()){
 		numChar >> letter;
 		ct[int(letter)].letterNum++;
-	} //å°†æ‰€æœ‰çš„å­—æ¯éƒ½ç»Ÿè®¡è¿›å…¥è¯¥å­—æ¯å¯¹åº”ascç ç¼–å·çš„æ•°ç»„ä¸­
-	//æŠŠæ‰€æœ‰çš„å¤§å†™ä¸ªæ•°éƒ½åŠ å…¥åˆ°å°å†™ä¸ªæ•°å½“ä¸­ã€‚
+	} //½«ËùÓÐµÄ×ÖÄ¸¶¼Í³¼Æ½øÈë¸Ã×ÖÄ¸¶ÔÓ¦ascÂë±àºÅµÄÊý×éÖÐ
+	//°ÑËùÓÐµÄ´óÐ´¸öÊý¶¼¼ÓÈëµ½Ð¡Ð´¸öÊýµ±ÖÐ¡£
 	for(int i = 65; i< 91; i++)
 	{
 		ct[i+32].letterNum += ct[i].letterNum;
 	}
-	//æŽ¥ä¸‹æ¥å¯¹æ•°ç»„è¿›è¡ŒæŽ’åº
+	//½ÓÏÂÀ´¶ÔÊý×é½øÐÐÅÅÐò
 	maxNum[0] = ct[97].letterNum;
 	for(int i = 0; i <5; i++)
 	{
